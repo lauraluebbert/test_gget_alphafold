@@ -38,7 +38,6 @@ jobs:
         run: |-
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
-          git checkout test_gget_alphafold
           git status
           git add test_gget_alphafold.html
           timestamp=$(date -u)
