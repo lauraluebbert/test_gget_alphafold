@@ -2,6 +2,9 @@ name: CI_alphafold
 on:
   schedule: 
     - cron: "0 16 * * 1,4"
+  push:
+    branches:
+    - main
 
 jobs:
   build:
