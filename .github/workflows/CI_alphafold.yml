@@ -33,6 +33,16 @@ jobs:
           
       - name: Execute notebook
         run: jupyter nbconvert --to 'html' --execute test_gget_alphafold.ipynb
+        
+      - name: Commit and push new data
+        run: |-
+          git config user.name "Laura Luebbert"
+          git config user.email "lauraluebbert@users.noreply.github.com"
+          git status
+          git add test_gget_alphafold.html
+          timestamp=$(date -u)
+          git commit -m "Latest test: ${timestamp}" || exit 0
+          git push
       
       - name: Clean up
         run: |
