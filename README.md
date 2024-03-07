@@ -4,4 +4,6 @@ View the last successful run [here](https://htmlpreview.github.io/?https://githu
 
 Notes:  
 - Make sure to clear outputs before uploading the test notebook!
-- Update any installation changes in the `gget alphafold` tutorials in the [gget tutorials repo](https://github.com/pachterlab/gget_examples)!  
+- Update any installation changes in the `gget alphafold` tutorials in the [gget tutorials repo](https://github.com/pachterlab/gget_examples):
+    - https://github.com/pachterlab/gget_examples/blob/main/gget_alphafold.ipynb
+    - https://github.com/pachterlab/gget_examples/blob/main/protein_structure_prediction_comparison.ipynb  
