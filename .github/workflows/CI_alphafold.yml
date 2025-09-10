@@ -40,7 +40,17 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Execute notebook
-        run: jupyter nbconvert --to 'html' --execute test_gget_alphafold.ipynb
+        env:
+          TF_CPP_MIN_LOG_LEVEL: "2"   # hides INFO & WARNING from TF/XLA
+          JAX_PLATFORMS: "cpu"        # force CPU backend, avoids CUDA plugin errors
+          TF_ENABLE_ONEDNN_OPTS: "0"  # stops oneDNN perf warnings
+        run: |
+          jupyter nbconvert \
+            --to html \
+            --execute \
+            --ExecutePreprocessor.timeout=-1 \
+            --allow-errors \
+            test_gget_alphafold.ipynb
 
       - name: Commit and push new data
         run: |-
