@@ -14745,7 +14745,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <pre>Collecting numpy&lt;1.24
   Downloading numpy-1.23.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.3 kB)
 Downloading numpy-1.23.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">17.1/17.1 MB</span> <span class="ansi-red-fg">152.3 MB/s</span>  <span class="ansi-yellow-fg">0:00:00</span>
+   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">17.1/17.1 MB</span> <span class="ansi-red-fg">57.2 MB/s</span>  <span class="ansi-yellow-fg">0:00:00</span>
 Installing collected packages: numpy
   Attempting uninstall: numpy
     Found existing installation: numpy 1.24.0
@@ -14780,13 +14780,13 @@ Requirement already satisfied: numpy&gt;=1.22 in /opt/hostedtoolcache/Python/3.1
 Requirement already satisfied: opt-einsum in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jax==0.4.26) (3.4.0)
 Requirement already satisfied: scipy&gt;=1.9 in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from jax==0.4.26) (1.10.0)
 Collecting openmm&lt;9,&gt;=8
-  Downloading openmm-8.3.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.0 kB)
+  Downloading openmm-8.4.0-cp311-cp311-manylinux_2_34_x86_64.whl.metadata (1.2 kB)
 Requirement already satisfied: numpy in /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages (from openmm&lt;9,&gt;=8) (1.23.5)
-Downloading openmm-8.3.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (14.0 MB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">14.0/14.0 MB</span> <span class="ansi-red-fg">35.9 MB/s</span>  <span class="ansi-yellow-fg">0:00:00</span>
+Downloading openmm-8.4.0-cp311-cp311-manylinux_2_34_x86_64.whl (14.3 MB)
+   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">14.3/14.3 MB</span> <span class="ansi-red-fg">52.7 MB/s</span>  <span class="ansi-yellow-fg">0:00:00</span>
 Installing collected packages: openmm
-Successfully installed openmm-8.3.1
-Shim OK. OpenMM version: 8.3.1.dev-6e13f13
+Successfully installed openmm-8.4.0
+Shim OK. OpenMM version: 8.4.0.dev-4768436
 Has app.PDBFile: True
 Has unit.nanometer: True
 </pre>
@@ -14837,89 +14837,13 @@ Has unit.nanometer: True
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>16:06:32 - INFO - Attempting to install py3Dmol using: pip install -q -U py3Dmol
-16:06:32 - INFO - py3Dmol installed successfully using pip install -q -U py3Dmol.
-16:06:32 - INFO - Installing AlphaFold from source (requires pip and git).
-  error: subprocess-exited-with-error
-  
-  × python setup.py egg_info did not run successfully.
-  │ exit code: 1
-  ╰─&gt; [63 lines of output]
-      /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: &#39;tests_require&#39;
-        warnings.warn(msg)
-      /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
-      !!
-      
-              ********************************************************************************
-              Please consider removing the following classifiers in favor of a SPDX license expression:
-      
-              License :: OSI Approved :: Apache Software License
-      
-              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
-              ********************************************************************************
-      
-      !!
-        self._finalize_license_expression()
-      running egg_info
-      creating /tmp/pip-pip-egg-info-c8rteq2m/ml_collections.egg-info
-      writing /tmp/pip-pip-egg-info-c8rteq2m/ml_collections.egg-info/PKG-INFO
-      writing dependency_links to /tmp/pip-pip-egg-info-c8rteq2m/ml_collections.egg-info/dependency_links.txt
-      writing requirements to /tmp/pip-pip-egg-info-c8rteq2m/ml_collections.egg-info/requires.txt
-      writing top-level names to /tmp/pip-pip-egg-info-c8rteq2m/ml_collections.egg-info/top_level.txt
-      writing manifest file &#39;/tmp/pip-pip-egg-info-c8rteq2m/ml_collections.egg-info/SOURCES.txt&#39;
-      reading manifest file &#39;/tmp/pip-pip-egg-info-c8rteq2m/ml_collections.egg-info/SOURCES.txt&#39;
-      reading manifest template &#39;MANIFEST.in&#39;
-      adding license file &#39;LICENSE&#39;
-      adding license file &#39;AUTHORS&#39;
-      Traceback (most recent call last):
-        File &#34;&lt;string&gt;&#34;, line 2, in &lt;module&gt;
-        File &#34;&lt;pip-setuptools-caller&gt;&#34;, line 35, in &lt;module&gt;
-        File &#34;/tmp/pip-install-1f6a2efz/ml-collections_1b1d1cc3f79a41f79770f2af428b0c2b/setup.py&#34;, line 30, in &lt;module&gt;
-          setup(
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/__init__.py&#34;, line 117, in setup
-          return distutils.core.setup(**attrs)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_distutils/core.py&#34;, line 186, in setup
-          return run_commands(dist)
-                 ^^^^^^^^^^^^^^^^^^
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_distutils/core.py&#34;, line 202, in run_commands
-          dist.run_commands()
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_distutils/dist.py&#34;, line 1002, in run_commands
-          self.run_command(cmd)
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/dist.py&#34;, line 1104, in run_command
-          super().run_command(command)
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_distutils/dist.py&#34;, line 1021, in run_command
-          cmd_obj.run()
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/command/egg_info.py&#34;, line 312, in run
-          self.find_sources()
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/command/egg_info.py&#34;, line 320, in find_sources
-          mm.run()
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/command/egg_info.py&#34;, line 548, in run
-          self.prune_file_list()
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/command/sdist.py&#34;, line 162, in prune_file_list
-          super().prune_file_list()
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_distutils/command/sdist.py&#34;, line 386, in prune_file_list
-          base_dir = self.distribution.get_fullname()
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_core_metadata.py&#34;, line 275, in get_fullname
-          return _distribution_fullname(self.get_name(), self.get_version())
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File &#34;/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/setuptools/_core_metadata.py&#34;, line 293, in _distribution_fullname
-          canonicalize_version(version, strip_trailing_zero=False),
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      TypeError: canonicalize_version() got an unexpected keyword argument &#39;strip_trailing_zero&#39;
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-error: metadata-generation-failed
-
-× Encountered error while generating package metadata.
-╰─&gt; See above for output.
-
-note: This is an issue with the package mentioned above, not pip.
-hint: See above for details.
-16:06:56 - ERROR - AlphaFold installation failed.
-Command &#39;[&#39;pip&#39;, &#39;install&#39;, &#39;-q&#39;, &#39;--upgrade&#39;, &#39;absl-py&gt;=2.1,&lt;3&#39;, &#39;dm-haiku&lt;=0.0.12&#39;, &#39;dm-tree&gt;=0.1.8&#39;, &#39;filelock&gt;=3.12&#39;, &#39;jax==0.4.26&#39;, &#39;jaxlib==0.4.26&#39;, &#39;jaxtyping&gt;=0.2.30&#39;, &#39;jmp&gt;=0.0.4&#39;, &#39;ml-collections&gt;=0.1,&lt;1&#39;, &#39;ml-dtypes&gt;=0.3.1,&lt;0.6&#39;, &#39;numpy&gt;=1.26,&lt;2&#39;, &#39;opt-einsum&gt;=3.4,&lt;4&#39;, &#39;pillow&gt;=10,&lt;12&#39;, &#39;protobuf&lt;4&#39;, &#39;scipy&gt;=1.10,&lt;2&#39;, &#39;tabulate&gt;=0.9&#39;, &#39;tqdm&gt;=4.65&#39;, &#39;typeguard&gt;=2.13,&lt;3&#39;, &#39;zstandard&gt;=0.21,&lt;0.24&#39;]&#39; returned non-zero exit status 1.
+<pre>16:06:34 - INFO - Attempting to install py3Dmol using: pip install -q -U py3Dmol
+16:06:34 - INFO - py3Dmol installed successfully using pip install -q -U py3Dmol.
+16:06:34 - INFO - Installing AlphaFold from source (requires pip and git).
+ERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow-cpu 2.17.1 requires ml-dtypes&lt;0.5.0,&gt;=0.3.1, but you have ml-dtypes 0.5.3 which is incompatible.
+16:07:12 - ERROR - AlphaFold installation failed. Import error:
+No module named &#39;alphafold&#39;
 </pre>
 </div>
 </div>
@@ -14972,7 +14896,7 @@ Command &#39;[&#39;pip&#39;, &#39;install&#39;, &#39;-q&#39;, &#39;--upgrade&#39
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>16:06:56 - ERROR - 
+<pre>16:07:12 - ERROR - 
             Some third-party dependencies are missing. Please run the following command: 
             &gt;&gt;&gt; gget.setup(&#39;alphafold&#39;) or $ gget setup alphafold
             
